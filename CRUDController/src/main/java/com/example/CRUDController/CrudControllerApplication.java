@@ -59,7 +59,7 @@ public class CrudControllerApplication {
 		logger.error("string {} wurde durch {} ersetzt", oldString, newString);
 		return "updated list: " + listOfStrings.toString();
 	}
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CrudControllerApplication.class, args);
 	}
