@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: kubdemo
+  name: kubdemo
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: kubdemo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: kubdemo
+    spec:
+      containers:
+      - image: hasniwutz/kubernetes-example:v0.2
+        name: kubernetes-example
+        resources: {}
+status: {}
